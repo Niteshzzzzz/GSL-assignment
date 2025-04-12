@@ -61,8 +61,8 @@ function Login() {
     try {
       console.log(formData)
       const { data } = await axios.post('auth/login', formData)
-      console.log(data)
       localStorage.setItem('token', JSON.stringify(data))
+      toast.success('You logedin successfully.')
       navigate('/')
     } catch (error) {
       toast.error('username/password is wrong. Please try again!')

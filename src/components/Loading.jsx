@@ -2,7 +2,7 @@ import React from 'react'
 
 function Loading() {
   return (
-    <h1 className='w-full h-full flex items-center justify-center text-5xl'>Loading...</h1>
+    <h1 className='loading'>Loading...</h1>
 )
 }
 
