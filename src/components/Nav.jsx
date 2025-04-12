@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faShopify } from '@fortawesome/free-brands-svg-icons'
-import CartCount from './cartCount'
+import CartCount from './CartCount'
 
 function Nav({cartCount, setCartCount}) {
 
