@@ -13,7 +13,6 @@ function Home() {
     const navigate = useNavigate()
     const category = decodeURIComponent(search.split('=')[1])
     const tokens = localStorage.getItem('token')
-
     const getfilterProduct = async () => {
         try {
             const { data } = await axios.get(`products/category/${category}`)
@@ -42,7 +41,7 @@ function Home() {
 
     }, [category, getProduct])
 
-    return (tokens != 'undefined') ? (filterProduct ? (
+    return (tokens != 'undefined' && tokens != null) ? (filterProduct ? (
         <>
 
             <div className='card-container'>
