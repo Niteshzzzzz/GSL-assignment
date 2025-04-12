@@ -56,7 +56,7 @@ function CartPage({ setCartCount }) {
             <div className="cart-detail">
               <p className="p">Product</p>
               <p>
-                {product.title.slice(0, 16)}
+                {product.title.slice(0, 12)}
               </p>
 
             </div>
