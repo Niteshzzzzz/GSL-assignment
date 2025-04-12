@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import InputField from './InputField'
 import axios from '../utils/axios'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
 function Login() {
@@ -64,7 +65,7 @@ function Login() {
       localStorage.setItem('token', JSON.stringify(data))
       navigate('/')
     } catch (error) {
-      alert('username/password is wrong. Please try again!')
+      toast.error('username/password is wrong. Please try again!')
     }
   }
 
