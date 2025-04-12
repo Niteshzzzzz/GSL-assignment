@@ -4,7 +4,6 @@ import axios from '../utils/axios'
 import Loading from './Loading'
 import { productContext } from '../utils/Context'
 import { toast } from 'react-toastify'
-// import { toast } from 'react-toastify'
 
 function Details({ cartCount, setCartCount }) {
 
@@ -22,14 +21,6 @@ function Details({ cartCount, setCartCount }) {
       console.log(error)
     }
   }
-
-  // const deleteHandler = (id) => {
-  //   const filteredProduct = getProduct.filter(p => p.id != id)
-  //   setGetProduct(filteredProduct)
-  //   localStorage.setItem('products', JSON.stringify(filteredProduct))
-  //   toast.success('Product deleted successfully')
-  //   navigate('/')
-  // }
 
   const cartHandler = (product) => {
     let data = []

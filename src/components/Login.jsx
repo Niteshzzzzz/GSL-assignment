@@ -36,10 +36,6 @@ function Login() {
           return true
         }
 
-        // if (rule.pattern && !rule.pattern.test(value)) {
-        //   errorData[key] = rule.message
-        //   return true
-        // }
       })
     })
 
@@ -59,7 +55,6 @@ function Login() {
     })
 
     try {
-      console.log(formData)
       const { data } = await axios.post('auth/login', formData)
       localStorage.setItem('token', JSON.stringify(data))
       toast.success('You logedin successfully.')
