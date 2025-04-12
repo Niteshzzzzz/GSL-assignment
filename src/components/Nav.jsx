@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { productContext } from '../utils/Context'
-import CartCount from './cartCount'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faShopify } from '@fortawesome/free-brands-svg-icons'
+import CartCount from './cartCount'
 
 function Nav({cartCount, setCartCount}) {
 
